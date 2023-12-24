@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Урок 2. JS - Продвинутая работа с функциями и классами</title>
+  <script src="1.js" defer></script>
+  <script src="2.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Отзывы</h1>
+    <div id="errorField">
+
+    </div>
+    <form class="form" id="reviewForm">
+      <label for="productField">Выбор необходимого товара:</label>
+      <select name="product" id="productField">
+        <option value="" disabled selected>Выберите товар
+        </option>
+      </select>
+      <label for="reviewField">Отзывы:</label>
+      <textarea name="review" id="reviewField" cols="30" rows="10" class="form__text"></textarea>
+      <button type="submit" class="form__btn">
+        Отправить
+      </button>
+    </form>
+    <div class="reviews">
+      <dl class="reviews__list" id="reviewList"></dl>
+    </div>
+  </div>
+</body>
+
+</html>
